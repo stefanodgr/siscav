@@ -1,0 +1,3 @@
+ERROR:  syntax error at or near ";"
+LINE 1: ...onexion WHERE conexion_fecha_fin IS NULL AND conexion_id = ;
+                                                                      ^SELECT * FROM conexion WHERE conexion_fecha_fin IS NULL AND conexion_id = ;

@@ -1,0 +1,5 @@
+SELECT A.est_id AS id,
+						A.est_sigla AS sigla,
+						A.est_desc AS descripcion,
+						A.est_activo AS activo,
+						A.est_padre_id AS padre FROM estructura AS A WHERE A.est_activo = 'T' AND A.est_padre_id = 85 ORDER BY A.est_padre_id;

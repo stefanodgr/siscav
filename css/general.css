@@ -1,0 +1,29 @@
+#divArbol{
+	position: relative;
+	border:1px solid lightgray;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding-left:0px;
+	padding-top:0px;
+}
+#ficha_personal{
+    position: relative;
+    width: 600px;
+    top: 0px;
+    left: calc((100% - 600px)/2);
+    border: 1px solid #d8d8d8;
+    border-radius: 6px 6px 6px 6px;
+}
+.oculto{
+	display: none;
+}
+.autorizado{
+    background: rgb(70, 143, 79); 
+}
+.restringido{
+    background: rgb(177, 53, 53);
+}
+.acceso{
+    background: rgb(146, 146, 146);
+}

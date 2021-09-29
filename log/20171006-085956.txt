@@ -1,0 +1,3 @@
+ERROR:  syntax error at or near ")"
+LINE 1: SELECT * FROM rel_perfil_usuario WHERE usuario_id IN ();
+                                                              ^SELECT * FROM rel_perfil_usuario WHERE usuario_id IN ();

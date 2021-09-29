@@ -1,0 +1,1 @@
+ERROR:  null value in column "conexion_id" violates not-null constraintINSERT INTO visitante(visitante_cedula,visitante_nombre,visitante_apellido,visitante_foto,visitante_org,pers_id) VALUES ('V13672171','YOHANA LISBETH','CAZORLA AVILA','t','C.A METRO DE CARACAS','14649');

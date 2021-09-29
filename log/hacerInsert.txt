@@ -1,0 +1,1 @@
+INSERT INTO conexion(conexion_ip,conexion_fecha_ini,rel_perfil_usuario_id) VALUES ('10.8.7.135','2018-04-02 15:47:06','11');

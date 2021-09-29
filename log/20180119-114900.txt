@@ -1,0 +1,2 @@
+ERROR:  invalid byte sequence for encoding "UTF8": 0xd14f
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by "client_encoding".UPDATE estructura SET est_id = '120',est_desc = 'COMPENSACION Y GESTION DEL DESEMPEÑO',est_padre_id = '104' WHERE est_id = '120';

@@ -1,0 +1,3 @@
+ERROR:  invalid input syntax for integer: "undefined"
+LINE 1: ...OM rel_personal_estructura WHERE 1=1 AND est_id = 'undefined...
+                                                             ^SELECT rel_pers_est_id FROM rel_personal_estructura WHERE 1=1 AND est_id = 'undefined' ORDER BY rel_pers_est_id;

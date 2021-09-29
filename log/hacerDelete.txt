@@ -1,0 +1,1 @@
+DELETE FROM lista_negra WHERE lista_negra_id = 1;

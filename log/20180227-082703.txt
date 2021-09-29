@@ -1,0 +1,26 @@
+ERROR:  syntax error at or near ";"
+LINE 24: ...a G ON G.visitante_id = B.visitante_id WHERE A.visita_id = ;
+                                                                       ^SELECT A.visita_id id,
+                        A.visita_cod codigo, 
+                        A.visita_fecha_ent fecha_ini, 
+                        A.visita_fecha_sal fecha_fin,
+                        B.visitante_id id_vte, 
+                        B.visitante_cedula cedula,
+                        B.visitante_nombre nombre,
+                        B.visitante_apellido apellido,
+                        B.visitante_org organizacion,
+                        B.visitante_foto foto,
+                        B.pers_id pers_id, 
+                        C.est_desc area,
+                        A.pers_id personal,
+                        A.visita_tipo tipo,
+                        A.visita_observ observacion,
+                        D.conexion_fecha_ini fecha_reg,
+                        F.usuario_login usuario,
+                        G.lista_negra_id id_lista FROM visita A
+                        INNER JOIN visitante B ON B.visitante_id = A.visitante_id
+                        INNER JOIN estructura C ON C.est_id = A.est_id
+                        INNER JOIN conexion D ON D.conexion_id = A.conexion_id
+                        INNER JOIN rel_perfil_usuario E ON E.rel_perfil_usuario_id = D.rel_perfil_usuario_id
+                        INNER JOIN usuario F ON F.usuario_id = E.usuario_id
+                        LEFT JOIN lista_negra G ON G.visitante_id = B.visitante_id WHERE A.visita_id = ;

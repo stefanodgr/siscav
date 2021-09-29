@@ -1,0 +1,1 @@
+UPDATE conexion set conexion_fecha_fin = '2018-04-02 16:17:16' WHERE conexion_id = 422 AND conexion_fecha_fin IS NULL

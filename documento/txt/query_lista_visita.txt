@@ -1,0 +1,17 @@
+SELECT A.visita_id AS id,
+                        A.visita_cod AS codigo,
+                        C.est_id AS area_id,
+                        C.est_desc AS area,
+                        A.visita_tipo AS tipo,
+                        B.visitante_nombre || ' ' || B.visitante_apellido AS visitante,
+                        B.visitante_cedula AS cedula,
+                        A.pers_id,
+                        A.visita_observ AS observacion,
+                        A.visita_fecha_ent AS entrada,
+                        A.visita_fecha_sal AS salida,
+                        G.usuario_login AS usuario FROM visita AS A
+                        INNER JOIN visitante AS B ON B.visitante_id = A.visitante_id
+                        INNER JOIN estructura AS C ON C.est_id = A.est_id
+                        INNER JOIN conexion AS E ON E.conexion_id = A.conexion_id
+                        INNER JOIN rel_perfil_usuario AS F ON F.rel_perfil_usuario_id = E.rel_perfil_usuario_id
+                        INNER JOIN usuario AS G ON G.usuario_id = F.usuario_id WHERE A.visita_fecha_sal IS NULL ORDER BY A.visita_fecha_ent;

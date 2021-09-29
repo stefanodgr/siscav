@@ -1,0 +1,1 @@
+UPDATE usuario SET usuario_id = '7',usuario_login = '150104',usuario_clave = '3BB51ECC3CD4F79F4B0DDEA8BB074FD969F0E151' WHERE usuario_id = '7';
